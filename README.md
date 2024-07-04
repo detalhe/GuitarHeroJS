@@ -16,7 +16,6 @@ The game is playable but still in early development. You can hit notes and score
 
 - Use the A, S, J, K, L keys to hit notes as they reach the bottom of the screen
 - Hold keys for long notes
-- Try to maintain accuracy and build your score
 
 ## Todo
 
