@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Guitar Hero</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div id="info">GuitarHeroJS</div>
-    <div id="score">Score: 0</div>
-    <div id="buttons">
-        <button id="startBtn">Start</button>
-        <button id="pauseBtn">Pause</button>
-        <button id="debugBtn">Toggle Debug</button>
+    <div id="game-container">
+        <div id="info">GuitarHeroJS</div>
+        <div id="score">Score: 0</div>
+        <div id="buttons">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="debugBtn">Debug</button>
+        </div>
     </div>
-    <audio id="defaultSong" src="default.mp3"></audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="engine/scene.js"></script>
-    <script src="engine/notes.js"></script>
-    <script src="engine/effects.js"></script>
-    <script src="engine/main.js"></script>
+    <script src="./engine/scene.js"></script>
+    <script src="./engine/notes.js"></script>
+    <script src="./engine/effects.js"></script>
+    <script src="./engine/main.js"></script>
 </body>
 </html>

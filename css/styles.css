@@ -1,55 +1,77 @@
 body { 
     margin: 0; 
     overflow: hidden; 
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
 }
+
+#game-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
 #info, #score, #buttons { 
     position: absolute; 
-    color: white; 
+    z-index: 10;
 }
+
 #info { 
     top: 20px; 
-    width: 100%; 
-    text-align: center; 
-    font-size: 24px;
-    font-weight: bold;
+    left: 20px;
+    font-size: 28px;
+    font-weight: 600;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
+
 #score { 
-    top: 60px; 
+    top: 70px; 
     left: 20px; 
-    font-size: 18px;
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
 }
+
 #buttons { 
     top: 20px; 
     right: 20px; 
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
+
 button {
-    background-color: #4CAF50;
+    background-color: rgba(255,255,255,0.1);
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.1s;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(5px);
 }
-button:hover {
-    background-color: #45a049;
+
+button:focus {
+    outline: none;
 }
-button:active {
-    transform: scale(0.95);
-}
-#startBtn { background-color: #4CAF50; }
-#pauseBtn { background-color: #f44336; }
-#debugBtn { background-color: #008CBA; }
+
+#startBtn { background-color: rgba(76, 175, 80, 0.3); }
+#pauseBtn { background-color: rgba(244, 67, 54, 0.3); }
+#debugBtn { background-color: rgba(0, 140, 186, 0.3); }
