@@ -127,8 +127,8 @@ function handleNoteHit(hitNote, key) {
     } else {
         scene.remove(hitNote);
         notes.splice(notes.indexOf(hitNote), 1);
+        score += 50; // Award 50 points for a regular note
     }
-    score += 100;
     document.getElementById('score').textContent = `Score: ${score}`;
     createHitEffect(hitNote.position, noteColors[key]);
 }
